@@ -1,0 +1,60 @@
+benchmark:
+  code: GSL-BENCH-GEO-01
+  name: GSLHub Generative Search / GEO Visibility Benchmark
+  version: 0.1.0
+  status: pilot
+  organization: GSLHub — Generative Search Lab Hub
+  homepage: https://gslhub.com
+  methodology_repository: https://github.com/gslhub/research
+  platform_repository: https://github.com/gslhub/website
+
+scope:
+  domain: generative-search
+  focus:
+    - generative-engine-optimization
+    - source-visibility
+    - citation-occurrence
+    - citation-position
+    - response-consistency
+
+pilot_design:
+  planned_repetitions: 5
+  baseline_rule: first-eligible-repetition
+  comparisons_after_baseline: 4
+  empirical_results_in_repository: false
+
+metrics:
+  - code: AIR
+    version: 0.1.0
+    unit: proportion
+    direction: higher-is-better
+    definition: ../../metrics/AIR-v0.1.0.md
+  - code: CR
+    version: 0.1.0
+    unit: proportion
+    direction: higher-is-better
+    definition: ../../metrics/CR-v0.1.0.md
+  - code: MCP
+    version: 0.1.0
+    unit: ordinal-position
+    direction: lower-is-earlier
+    definition: ../../metrics/MCP-v0.1.0.md
+  - code: RCR
+    version: 0.1.0
+    unit: proportion
+    direction: higher-is-more-consistent
+    definition: ../../metrics/RCR-v0.1.0.md
+
+canonical_protocol:
+  code: GSL-GEO-BENCH-01
+  version: 0.1.0
+  url: https://github.com/gslhub/research/blob/main/protocols/GSL-GEO-BENCH-01/PILOT-PROTOCOL-v0.1.0-ES.md
+
+canonical_codebook:
+  version: 0.1.0
+  url: https://github.com/gslhub/research/blob/main/codebooks/OBSERVATIONS-CITATIONS-v0.1.0-ES.md
+
+licensing:
+  benchmark_documentation: CC-BY-4.0
+  datasets: per-release
+  third_party_material: original-terms
