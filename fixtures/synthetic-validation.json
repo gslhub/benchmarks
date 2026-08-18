@@ -1,0 +1,37 @@
+{
+  "fixtureType": "synthetic-calculator-validation",
+  "empirical": false,
+  "researchFinding": false,
+  "warning": "Synthetic software-validation values only. These data do not describe any AI system and must not be reported as empirical findings.",
+  "benchmark": {
+    "code": "GSL-BENCH-GEO-01",
+    "version": "0.1.0"
+  },
+  "metrics": {
+    "AIR": {
+      "version": "0.1.0",
+      "numerator": 3,
+      "denominator": 4,
+      "value": 0.75
+    },
+    "CR": {
+      "version": "0.1.0",
+      "numerator": 2,
+      "denominator": 4,
+      "value": 0.5
+    },
+    "MCP": {
+      "version": "0.1.0",
+      "positions": [1, 2, 3],
+      "sum": 6,
+      "denominator": 3,
+      "value": 2.0
+    },
+    "RCR": {
+      "version": "0.1.0",
+      "consistentComparisons": 3,
+      "comparisons": 4,
+      "value": 0.75
+    }
+  }
+}
