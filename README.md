@@ -6,7 +6,7 @@
 
 **Benchmark specifications, metric definitions, synthetic validation fixtures and publication rules for GSLHub**
 
-[Website](https://gslhub.com) · [Research methodology](https://github.com/gslhub/research) · [Platform](https://github.com/gslhub/website)
+[Website](https://gslhub.com) · [Research methodology](https://github.com/gslhub/research) · [Metrics software](https://github.com/gslhub/software/tree/main/packages/metrics-core) · [Platform](https://github.com/gslhub/website)
 
 </div>
 
@@ -34,6 +34,14 @@ The first benchmark family evaluates controlled Generative Search / GEO visibili
 | **RCR** | Response Consistency Rate | How stable are repeated responses relative to a frozen baseline? |
 
 The canonical research protocol and observation/citation codebook live in [`gslhub/research`](https://github.com/gslhub/research).
+
+## Reference implementation
+
+The first independent implementation of these four metric specifications is [`@gslhub/metrics-core`](https://github.com/gslhub/software/tree/main/packages/metrics-core) in [`gslhub/software`](https://github.com/gslhub/software).
+
+The package is intentionally independent of the GSLHub CMS/database layer and exposes deterministic calculation outputs, eligibility exclusions, numerator/denominator data and SHA-256 input/output checksums. Its automated test suite reproduces the synthetic fixture in this repository.
+
+The **benchmark specification remains normative**. Software implementations are versioned separately so they can be validated against the specification they claim to implement.
 
 ## Repository structure
 
@@ -78,6 +86,8 @@ RCR = 3 / 4 = 0.75
 ```
 
 These numbers are **not empirical findings**, do not describe any AI system and must never be cited as research results.
+
+The same expected values are asserted by the public `@gslhub/metrics-core` test suite, providing a cross-repository specification-to-implementation check.
 
 ## Results
 
