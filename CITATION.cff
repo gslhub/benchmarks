@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use GSLHub benchmark specifications or metric definitions, cite this repository and the specific benchmark/version used."
+title: "GSLHub Benchmarks: Reproducible Evaluation for Generative Search and GEO"
+type: dataset
+authors:
+  - family-names: "Yauri"
+    given-names: "Eduardo"
+    affiliation: "GSLHub — Generative Search Lab Hub"
+repository-code: "https://github.com/gslhub/benchmarks"
+url: "https://gslhub.com"
+license: "CC-BY-4.0"
+abstract: "Versioned benchmark specifications and metric definitions for reproducible evaluation of Generative Search, GEO visibility, citation occurrence, citation position and response consistency."
+keywords:
+  - generative search
+  - generative engine optimization
+  - GEO
+  - AI evaluation
+  - benchmarks
+  - citation analysis
+  - reproducible research
