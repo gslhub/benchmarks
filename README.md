@@ -6,6 +6,8 @@
 
 **Benchmark specifications, metric definitions, synthetic validation fixtures and publication rules for GSLHub**
 
+**English** · [Español](./README.es.md)
+
 [Website](https://gslhub.com) · [Research methodology](https://github.com/gslhub/research) · [Metrics software](https://github.com/gslhub/software/tree/main/packages/metrics-core) · [Platform](https://github.com/gslhub/website)
 
 </div>
